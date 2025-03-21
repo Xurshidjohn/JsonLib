@@ -1,0 +1,9 @@
+TARGET = build/RESULT
+CC = gcc
+FLAGS = -o 
+FILES = RESULT.C SWS/SWS.C
+RM_FOLDER= rm -R 
+RM_FILE = rm
+all: $(TARGET)
+	$(RM) $(TARGET)
+	$(CC) $(FILES) $(FLAGS) $(TARGET) 

@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "RESULT.C": "cpp",
+        "SWS.C": "cpp",
+        "JSON_LEXER.C": "cpp"
+    }
+}
