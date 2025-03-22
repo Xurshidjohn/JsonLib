@@ -17,26 +17,35 @@ void init_json(char *JSON_DATA){
             case '{':
                 token.type = 4;
                 token.value = JSON_DATA[i];
+                tokens[token_i] = token;
+                token_i++;
                 break;
             case '}':
                 token.type = 5;
                 token.value = JSON_DATA[i];
+                tokens[token_i] = token;
+                token_i++;
                 break;
             case '"':
                 token.type = 7;
                 token.value = JSON_DATA[i];
+                tokens[token_i] = token;
+                token_i++;
                 break;
             case ':':
                 token.type = 2;
                 token.value = JSON_DATA[i];
+                tokens[token_i] = token;
+                token_i++;
                 break;
             case ',':
                 token.type = 3;
                 token.value = JSON_DATA[i];
+                tokens[token_i] = token;
+                token_i++;
                 break;
-
             default:
-                printf("%c", JSON_DATA[i]);
+                // printf("%c", JSON_DATA[i]);
                 break;
         }
         i++;
@@ -44,7 +53,12 @@ void init_json(char *JSON_DATA){
 }
 
 int main() {
-    init_json("{\"username\": \"Xurshid\", \"age\": 16}");
+    init_json("{\"username\": \"Xurshid\", \"age\": \"16\", \"isMarried\": \"false\"}");
+    for(int i = 0;i < 100;i++) {
+        if(tokens[i].value) {
+            printf("%c", tokens[i].value);
+        }
+    }
 }
 
 // {"username": "Xurshid", "age": 16}
