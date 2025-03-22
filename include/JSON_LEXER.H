@@ -12,10 +12,9 @@ typedef enum {
 
 typedef struct {
     int type;
-    char *value;
-    struct Token *next;
+    char value;
 } TOKEN;
 
-TOKEN* init_json(char *JSON_DATA);
+void init_json(char *JSON_DATA);
 
 #endif

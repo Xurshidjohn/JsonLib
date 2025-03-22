@@ -2,7 +2,7 @@
 #include <ctype.h>
 #include <string.h>
 #include <stdlib.h>
-#include "../HEADERS/SWS.H"
+#include "../include/SWS.H"
 
 char* SKIP_WHITE_SPACE(char *TEXT) {
 	if(TEXT[0] == '\0') {
