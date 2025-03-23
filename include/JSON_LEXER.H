@@ -13,11 +13,19 @@ typedef enum {
 } TOKEN_TYPE;
 
 typedef struct {
+    char *key;
+    char *value;
+} DICT_DATA;
+
+typedef struct {
     TOKEN_TYPE type;
     char value;
 } TOKEN;
 
+
+// find fonts
 void init_json(char *JSON_DATA);
 char* get_token_type(TOKEN_TYPE token_type);
+char *key_filter(TOKEN tokens[]);
 
 #endif
