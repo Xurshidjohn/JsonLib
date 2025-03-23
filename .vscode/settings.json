@@ -2,6 +2,17 @@
     "files.associations": {
         "SWS.C": "cpp",
         "JSON_LEXER.C": "cpp",
-        "RESULT.C": "cpp"
+        "RESULT.C": "cpp",
+        "charconv": "cpp",
+        "chrono": "cpp",
+        "optional": "cpp",
+        "format": "cpp",
+        "ratio": "cpp",
+        "system_error": "cpp",
+        "array": "cpp",
+        "functional": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp"
     }
 }
