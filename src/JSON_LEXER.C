@@ -38,6 +38,8 @@ char* key_filter(TOKEN tokens[]) {
     return "salom";
 }
 
+// for test
+
 char* get_token_type(TOKEN_TYPE token_type) {
     switch(token_type) {
         case JSON_COLON:
